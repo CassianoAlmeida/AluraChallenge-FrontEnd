@@ -1,0 +1,54 @@
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  width: 1136px;
+  height: 115px;
+  left: 152px;
+  top: 0px;
+  margin: 0 auto;
+}
+.nav__container__logo {
+  display: flex;
+  position: relative;
+}
+.nav__container__logo__text {
+  font-size: 26px;
+  font-weight: bold;
+}
+.nav__container__logo__text__blue {
+  color: #2A7AE4;
+}
+.nav__container__search-box__input {
+  width: 393px;
+  height: 40px;
+  left: calc(50% - 196.5px + 104px);
+  top: 5px;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  border: none;
+}
+.nav__container__search-box__img {
+  position: relative;
+  left: -10%;
+  top: 5px;
+}
+.nav__container__login-button {
+  width: 182px;
+  height: 51px;
+  left: 954px;
+  top: 32px;
+  background-color: white;
+  border: 1px solid #2A7AE4;
+  box-sizing: border-box;
+  color: #2A7AE4;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/*# sourceMappingURL=index.css.map */
