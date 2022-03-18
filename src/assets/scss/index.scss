@@ -77,3 +77,18 @@ $light-gray: #F5F5F5;
         }
     }
 }
+
+.presentation {
+    width: 100%;
+    position: relative;
+
+    &__img {
+        height: 352px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        position: absolute;
+    }
+}

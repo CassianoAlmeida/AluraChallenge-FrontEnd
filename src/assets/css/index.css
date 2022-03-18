@@ -51,4 +51,17 @@
   line-height: 19px;
 }
 
+.presentation {
+  width: 100%;
+  position: relative;
+}
+.presentation__img {
+  height: 352px;
+  width: 100%;
+  object-fit: cover;
+}
+.presentation__title {
+  position: absolute;
+}
+
 /*# sourceMappingURL=index.css.map */
