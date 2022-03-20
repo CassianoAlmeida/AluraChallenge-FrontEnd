@@ -6,11 +6,11 @@ $light-blue-background: #EAF2FD;
 
 
 @mixin for-phone-only {
-    @media (max-width: 767.98px) { @content; }
+    @media (max-width: 667.98px) { @content; }
 }
 
 @mixin for-tablet-only {
-    @media (min-width: 768px) and (max-width: 1099.98px) { @content; }
+    @media (min-width: 668px) and (max-width: 1099.98px) { @content; }
 }
 
 @mixin for-desktop-only {

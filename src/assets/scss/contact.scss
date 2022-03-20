@@ -81,12 +81,22 @@
             font-size: 16px;
             line-height: 19px;
             margin-bottom: 8px;
+
+            @include for-tablet-only {
+                margin: 0 5% 0 0;
+                width: 90%;
+            }
         }
 
         &__form {
             display: flex;
             flex-direction: column;
             position: relative;
+
+            @include for-tablet-only {
+                margin: 0 5% 0 0;
+                width: 90%;
+            }
 
             &__name-label {
                 position: absolute;

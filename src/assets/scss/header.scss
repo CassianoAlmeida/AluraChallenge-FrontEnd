@@ -41,6 +41,10 @@
             position: absolute;
             left: 20%;
 
+            @include for-tablet-only {
+                left: 35%;
+            }
+
             @include for-phone-only {
                 left: 80%;
             }
@@ -53,9 +57,21 @@
                 border-radius: 20px;
                 border: none;
 
+                @include for-tablet-only {
+                    width: 272px;
+                }
+
                 @include for-phone-only {
                     width: 40px;
                     height: 40px;
+                }
+
+                &::-webkit-input-placeholder{
+                    opacity: 0%;
+                }
+
+                &::-moz-placeholder {
+                    opacity: 0%;
                 }
             }
 
@@ -91,7 +107,7 @@
                 font-size: 14px;
                 width: 150px;
                 height: 42px;
-                left: 60%;
+                left: 75%;
             }
 
             @include for-phone-only {

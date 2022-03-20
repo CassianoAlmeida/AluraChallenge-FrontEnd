@@ -37,6 +37,10 @@
         display: flex;
         justify-content: space-between;
 
+        @include for-tablet-only {
+            justify-content: space-around;  
+        }
+
         @include for-phone-only {
             flex-wrap: wrap;
             justify-content: space-around;
@@ -44,7 +48,8 @@
 
         &__card {
             @include for-tablet-only {
-                margin: 0 5%;
+                margin: 0 1%;
+                flex-shrink: 1;          
             }
 
             @include for-phone-only {
