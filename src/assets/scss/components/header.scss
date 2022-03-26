@@ -88,6 +88,9 @@
 
         &__login-button {
             position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 182px;
             height: 51px;
             top: 32px;
@@ -102,6 +105,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
+            text-decoration: none;
 
             @include for-tablet-only {
                 font-size: 14px;

@@ -1,7 +1,6 @@
 .contact {
     background-color: $light-blue-background;
     padding: 70px 0;
-    margin-top: 60px;
 
     &__container {
         max-width: 1136px;
@@ -33,6 +32,10 @@
             margin: 0 auto;
 
             @include for-phone-only {
+                margin-bottom: 6%;
+            }
+
+            @include for-tablet-only {
                 margin-bottom: 6%;
             }
             

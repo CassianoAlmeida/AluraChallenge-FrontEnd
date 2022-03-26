@@ -3,6 +3,8 @@ $custom-black: #464646;
 $light-gray: #F5F5F5;
 $white: #FFFFFF;
 $light-blue-background: #EAF2FD;
+$gray-background: #E5E5E5;
+$placeholder-color: #A2A2A2;
 
 
 @mixin for-phone-only {
@@ -18,7 +20,6 @@ $light-blue-background: #EAF2FD;
 }
 
 @import './components/header.scss',
-'./components/presentation.scss',
-'./components/products.scss',
+'./components/login.scss',
 './components/contact.scss',
 './components/footer.scss'

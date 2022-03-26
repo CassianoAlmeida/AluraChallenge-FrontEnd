@@ -1,0 +1,106 @@
+.login {
+    background-color: $gray-background;
+    padding: 92px 0;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 8px auto;
+        width: 131px;
+        height: 19px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+
+        @include for-tablet-only {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        @include for-phone-only {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 423px;
+
+        @include for-phone-only {
+            width: 300px;
+        }
+
+        &__field {
+            width: 423px;
+            height: 63px;
+            margin: 8px 0;
+            border: none;
+
+            @include for-tablet-only {
+                width: 275px;
+                height: 41px;
+            }
+
+            @include for-phone-only {
+                width: 275px;
+                height: 41px;
+            }
+            
+            &::-webkit-input-placeholder{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $placeholder-color;
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
+
+            &::-moz-placeholder {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $placeholder-color;
+                position: absolute;
+                left: 20px;
+            }
+        }
+
+        &__button {
+            width: 423px;
+            height: 62px;
+            margin-top: 8px;
+            background-color: $blue-theme;
+            border: none;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: $white;
+
+            @include for-tablet-only {
+                width: 109px;
+                height: 40px;
+            }
+
+            @include for-phone-only {
+                width: 109px;
+                height: 40px;
+            }
+        }
+    }
+
+
+    
+}
