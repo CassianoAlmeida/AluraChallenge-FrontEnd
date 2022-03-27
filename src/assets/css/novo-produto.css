@@ -124,65 +124,157 @@
   }
 }
 
-.login {
+main {
   background-color: #E5E5E5;
-  padding: 92px 0;
 }
-.login__title {
+
+.novo-produto {
+  padding: 92px 0;
+  margin: 0 auto;
+  width: 559px;
+}
+.novo-produto__title {
   display: flex;
-  justify-content: center;
-  margin: 0 auto 8px auto;
-  width: 131px;
+  justify-content: left;
+  margin: 0 auto 40px 0;
+  width: 559px;
   height: 19px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 32px;
+  color: #464646;
 }
 @media (min-width: 668px) and (max-width: 1099.98px) {
-  .login__title {
+  .novo-produto__title {
     font-size: 16px;
     line-height: 19px;
   }
 }
 @media (max-width: 667.98px) {
-  .login__title {
+  .novo-produto__title {
     font-size: 16px;
     line-height: 19px;
   }
 }
-.login__form {
+.novo-produto__add-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 152px;
+  margin-bottom: 16px;
+}
+.novo-produto__add-image__drag-box {
+  width: 50%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border: 1px dashed #C8C8C8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.novo-produto__add-image__drag-box__icon {
+  background: url("../../img/img-icon.png") center;
+}
+.novo-produto__add-image__drag-box__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #464646;
+  width: 80%;
+}
+.novo-produto__add-image__division {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+}
+.novo-produto__add-image__search-button {
+  width: 42%;
+  height: 50px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2A7AE4;
+  border: 1px solid #2A7AE4;
+}
+.novo-produto__form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 423px;
+  width: 559px;
 }
 @media (max-width: 667.98px) {
-  .login__form {
+  .novo-produto__form {
     width: 300px;
   }
 }
-.login__form__field {
-  width: 423px;
+.novo-produto__form__label {
+  display: none;
+}
+.novo-produto__form__field {
+  width: 559px;
   height: 63px;
   margin: 8px 0;
   border: none;
 }
 @media (min-width: 668px) and (max-width: 1099.98px) {
-  .login__form__field {
+  .novo-produto__form__field {
     width: 275px;
     height: 41px;
   }
 }
 @media (max-width: 667.98px) {
-  .login__form__field {
+  .novo-produto__form__field {
     width: 275px;
     height: 41px;
   }
 }
-.login__form__field::-webkit-input-placeholder {
+.novo-produto__form__field::-webkit-input-placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #A2A2A2;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.novo-produto__form__field::-moz-placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #A2A2A2;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.novo-produto__form__description {
+  width: 559px;
+  height: 82px;
+  margin: 8px 0;
+  border: none;
+}
+@media (min-width: 668px) and (max-width: 1099.98px) {
+  .novo-produto__form__description {
+    width: 275px;
+    height: 41px;
+  }
+}
+@media (max-width: 667.98px) {
+  .novo-produto__form__description {
+    width: 275px;
+    height: 41px;
+  }
+}
+.novo-produto__form__description::-webkit-input-placeholder {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -190,10 +282,10 @@
   line-height: 20px;
   color: #A2A2A2;
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 20px;
+  left: 10px;
 }
-.login__form__field::-moz-placeholder {
+.novo-produto__form__description::-moz-placeholder {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -201,10 +293,11 @@
   line-height: 20px;
   color: #A2A2A2;
   position: absolute;
-  left: 20px;
+  top: 20px;
+  left: 10px;
 }
-.login__form__button {
-  width: 423px;
+.novo-produto__form__button {
+  width: 100%;
   height: 62px;
   margin-top: 8px;
   background-color: #2A7AE4;
@@ -217,13 +310,13 @@
   color: #FFFFFF;
 }
 @media (min-width: 668px) and (max-width: 1099.98px) {
-  .login__form__button {
+  .novo-produto__form__button {
     width: 109px;
     height: 40px;
   }
 }
 @media (max-width: 667.98px) {
-  .login__form__button {
+  .novo-produto__form__button {
     width: 109px;
     height: 40px;
   }
@@ -232,6 +325,7 @@
 .contact {
   background-color: #EAF2FD;
   padding: 70px 0;
+  margin-top: 50px;
 }
 .contact__container {
   max-width: 1136px;
@@ -398,4 +492,4 @@
   padding: 1%;
 }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=novo-produto.css.map */

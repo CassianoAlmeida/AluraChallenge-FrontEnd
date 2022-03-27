@@ -1,0 +1,207 @@
+main {
+    background-color: $gray-background;
+}
+
+.novo-produto {
+    padding: 92px 0;
+    margin: 0 auto;
+    width: 559px;
+
+    &__title {
+        display: flex;
+        justify-content: left;
+        margin: 0 auto 40px 0;
+        width: 559px;
+        height: 19px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: $custom-black;
+
+        @include for-tablet-only {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        @include for-phone-only {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__add-image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 152px;
+        margin-bottom: 16px;
+
+        &__drag-box {
+            width: 50%;
+            height: 100%;
+            background-color: $white;
+            border: 1px dashed #C8C8C8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__icon {
+                background: url('../../img/img-icon.png') center;
+            }
+
+            &__text {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $custom-black;
+                width: 80%;
+            }
+        }
+
+        &__division {
+            width: 8%;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__search-button {
+            width: 42%;
+            height: 50px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $blue-theme;
+            border: 1px solid $blue-theme;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 559px;
+
+        @include for-phone-only {
+            width: 300px;
+        }
+
+        &__label {
+            display: none;
+        }
+
+        &__field {
+            width: 559px;
+            height: 63px;
+            margin: 8px 0;
+            border: none;
+
+            @include for-tablet-only {
+                width: 275px;
+                height: 41px;
+            }
+
+            @include for-phone-only {
+                width: 275px;
+                height: 41px;
+            }
+            
+            &::-webkit-input-placeholder{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: $placeholder-color;
+                position: absolute;
+                top: 5px;
+                left: 10px;
+            }
+
+            &::-moz-placeholder {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: $placeholder-color;
+                position: absolute;
+                top: 5px;
+                left: 10px;
+            }
+        }
+
+        &__description {
+            width: 559px;
+            height: 82px;
+            margin: 8px 0;
+            border: none;
+
+            @include for-tablet-only {
+                width: 275px;
+                height: 41px;
+            }
+
+            @include for-phone-only {
+                width: 275px;
+                height: 41px;
+            }
+            
+            &::-webkit-input-placeholder{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $placeholder-color;
+                position: absolute;
+                top: 20px;
+                left: 10px;
+            }
+
+            &::-moz-placeholder {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $placeholder-color;
+                position: absolute;
+                top: 20px;
+                left: 10px;
+            }
+        }
+
+        &__button {
+            width: 100%;
+            height: 62px;
+            margin-top: 8px;
+            background-color: $blue-theme;
+            border: none;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: $white;
+
+            @include for-tablet-only {
+                width: 109px;
+                height: 40px;
+            }
+
+            @include for-phone-only {
+                width: 109px;
+                height: 40px;
+            }
+        }
+    }
+
+
+    
+}

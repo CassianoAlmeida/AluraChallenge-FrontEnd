@@ -13,6 +13,7 @@
   display: flex;
   position: absolute;
   align-items: center;
+  text-decoration: none;
 }
 @media (max-width: 667.98px) {
   .nav__container__logo {
@@ -298,7 +299,7 @@
 .contact {
   background-color: #EAF2FD;
   padding: 70px 0;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .contact__container {
   max-width: 1136px;
@@ -332,6 +333,11 @@
   margin: 0 auto;
 }
 @media (max-width: 667.98px) {
+  .contact__info__logo {
+    margin-bottom: 6%;
+  }
+}
+@media (min-width: 668px) and (max-width: 1099.98px) {
   .contact__info__logo {
     margin-bottom: 6%;
   }
