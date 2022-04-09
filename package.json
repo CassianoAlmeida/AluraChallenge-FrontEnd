@@ -1,0 +1,19 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "alura-geek-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CassianoAlmeida/AluraChallenge-FrontEnd.git"
+  },
+  "author": "Cassiano Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CassianoAlmeida/AluraChallenge-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/CassianoAlmeida/AluraChallenge-FrontEnd#readme"
+}
