@@ -1,0 +1,28 @@
+{
+    "produtos": [
+      {
+        "nome": "Hambúrguer",
+        "preco": 8.5,
+        "categoria": 1,
+        "descricao": "Produto XYZ."
+      },
+      {
+        "nome": "Hambúrguer",
+        "preco": 8.5,
+        "categoria": 1,
+        "descricao": "Produto XYZ."
+      },
+      {
+        "nome": "Hambúrguer",
+        "preco": 8.5,
+        "categoria": 1,
+        "descricao": "Produto XYZ."
+      },
+      {
+        "nome": "Hambúrguer",
+        "preco": 8.5,
+        "categoria": 1,
+        "descricao": "Produto XYZ."
+      }
+    ]
+  }

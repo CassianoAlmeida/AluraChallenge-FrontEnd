@@ -178,19 +178,25 @@
 .presentation__content__button {
   width: 130px;
   height: 51px;
-  font-family: "Raleway";
-  font-style: normal;
-  color: #FFFFFF;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 19px;
   border: none;
   left: 0px;
   top: 119px;
   background-color: #2A7AE4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.presentation__content__button__anchor {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
 }
 @media (max-width: 667.98px) {
-  .presentation__content__button {
+  .presentation__content__button__anchor {
     font-size: 14px;
   }
 }
