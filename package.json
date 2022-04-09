@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CassianoAlmeida/AluraChallenge-FrontEnd/issues"
   },
-  "homepage": "https://github.com/CassianoAlmeida/AluraChallenge-FrontEnd#readme"
+  "homepage": "https://github.com/CassianoAlmeida/AluraChallenge-FrontEnd#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
