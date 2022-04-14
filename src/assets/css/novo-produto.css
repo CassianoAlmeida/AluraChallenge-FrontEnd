@@ -193,6 +193,10 @@ main {
     width: 40%;
   }
 }
+.novo-produto__add-image__drag-box__preview {
+  position: absolute;
+  height: 100%;
+}
 .novo-produto__add-image__drag-box__icon {
   background: center;
   margin: 25px auto 5px auto;

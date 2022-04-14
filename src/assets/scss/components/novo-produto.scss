@@ -63,6 +63,12 @@ main {
                 width: 40%;
             }
 
+            &__preview {
+                position: absolute;
+                //opacity: 0;
+                height: 100%;
+            }
+
             &__icon {
                 background: center;
                 margin: 25px auto 5px auto;
