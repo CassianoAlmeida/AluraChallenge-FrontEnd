@@ -10,6 +10,15 @@ arrastaImagem.addEventListener("change", function(){
         preview.src = reader.result;
         document.getElementById("img-icon").classList.add('novo-produto__add-image__drag-box__icon-hide');
         document.getElementById("drag-box-description").classList.add('novo-produto__add-image__drag-box__text-hide');        
+        // let photo = document.getElementById("image-input").files[0];
+        // console.log(photo)
+        // let formData = new FormData();
+        // formData.append("photo", photo);
+        //console.log(formData);
+        //fetch('../src/assets/img', {
+        //    method: "POST",
+        //    body: formData
+        //}).then(console.log('imagem cadastrada'));
     });
     reader.readAsDataURL(this.files[0]);
 })

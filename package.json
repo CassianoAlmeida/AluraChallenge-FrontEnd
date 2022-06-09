@@ -1,22 +1,25 @@
 {
-  "name": "alurageek",
+  "name": "alura-geek",
   "version": "1.0.0",
-  "description": "alura-geek-app",
+  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CassianoAlmeida/AluraChallenge-FrontEnd.git"
-  },
-  "author": "Cassiano Almeida",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CassianoAlmeida/AluraChallenge-FrontEnd/issues"
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   },
-  "homepage": "https://github.com/CassianoAlmeida/AluraChallenge-FrontEnd#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.4",
+    "multer": "^1.4.5-lts.1"
   }
 }

@@ -1,16 +1,7 @@
-import { getDBCards } from "./js/controller/getDBCards.js";
-import { botaoVerConsoles, pageScroll } from "./js/view/scrollSuave.js"
+import app from './js/app.js';
 
+const port = process.env.PORT || 3000;
 
-botaoVerConsoles.addEventListener('click', pageScroll(botaoVerConsoles))
-
-
-getDBCards();
-
-
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => res.send("Alura Geek"))
-
-app.listen(process.env.PORT || 3000);
+app.listen(port, () => {
+    console.log(`Servidor escutando em http://localhost:${port}`)
+})
