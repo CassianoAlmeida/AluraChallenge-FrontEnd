@@ -1,17 +1,11 @@
 import multer from "multer";
-import path from "path";
-import url from "url";
-
-//const urlPath = new URL('../../src/assets/img', import.meta.url);
+import crypto from 'crypto'
 
 const multerConfig = {
-    //dest: path.resolve(__dirname, '..', '..', 'src', 'img'),
-    //dest: urlPath,
-    dest: '../../src/assets/img',
+    dest: 'src/assets/img',
     storage: multer.diskStorage({
         destination: (req, file, cb) => {
-            //cb(null, path.resolve(__dirname, '..', '..', 'src', 'img'));
-            cb(null, urlPath);
+            cb(null, 'src/assets/img');
         },
         filename: (req, file, cb) => {
             crypto.randomBytes(16, (err, hash) => {
@@ -25,7 +19,7 @@ const multerConfig = {
     limits: {
         fileSize: 2 * 1024 * 1024,
     },
-    fileFilter: (req, file, cd) => {
+    fileFilter: (req, file, cb) => {
         const allowedMimes = [
             'image/jpeg',
             'image/pjpeg',
