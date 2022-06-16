@@ -15,13 +15,14 @@ arrastaImagem.addEventListener("change", function(){
     
 const submit = document.querySelector('[data-submit]')
 
-submit.addEventListener('click' , (event) =>{
+submit.addEventListener('click' , () =>{
     const data = new FormData();
     data.append('image', arrastaImagem.files[0]);
-    data.append('user', 'hubot')
+    const imageName = data.get('image').name;
+    console.log(imageName);
     fetch('http://localhost:3000/imagem', {
-    method: 'POST',
-    body: data,
-})
+        method: 'POST',
+        body: data,
+    })
 })
     

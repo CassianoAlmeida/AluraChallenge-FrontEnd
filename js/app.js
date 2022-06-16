@@ -10,10 +10,15 @@ db.once("open" , () => {
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); //necessário para upload de arquivos
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:3000");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+  });
+  
 routes(app);
-
-app.use((error, req, res, next) => {
-    console.log('This is the rejected field ->', error.field);
-});
 
 export default app;
