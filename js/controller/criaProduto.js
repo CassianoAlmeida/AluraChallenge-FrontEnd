@@ -7,8 +7,10 @@ arrastaImagem.addEventListener("change", function(){
     const reader = new FileReader();
     reader.addEventListener('load', () => {
         preview.src = reader.result;
-        document.getElementById("img-icon").classList.add('novo-produto__add-image__drag-box__icon-hide');
-        document.getElementById("drag-box-description").classList.add('novo-produto__add-image__drag-box__text-hide');
+        document.getElementById("img-icon").
+            classList.add('novo-produto__add-image__drag-box__icon-hide');
+        document.getElementById("drag-box-description").
+            classList.add('novo-produto__add-image__drag-box__text-hide');
         });
     reader.readAsDataURL(this.files[0]);
 })
@@ -17,7 +19,17 @@ arrastaImagem.addEventListener("change", function(){
 const submit = document.querySelector('[data-submit]')
 
 submit.addEventListener('click', () => {
+    const data = new FormData();
+    data.append('image', arrastaImagem.files[0]);
+    fetch('http://localhost:3000/imagem', {
+        method: 'POST',
+        body: data,
+    })
+    
     //sobe dados para o mongo.db
+    const date = new Date();
+    const imageName = data.get('image').name;
+    const imageNewName = `${String((Date.now())).slice(0, -3)}-${imageName}`
     const nameInput = document.getElementById("nome").value;
     const priceInput = document.getElementById("preco").value;
     const selectInput = document.querySelector('select');
@@ -25,13 +37,12 @@ submit.addEventListener('click', () => {
     const category = option.textContent;    
     const descriptionInput = document.getElementById("descricao").value;
     const produto = {
+        imagem: imageNewName,
         nome: nameInput, 
         preco: priceInput, 
         descricao: descriptionInput,
         categoria: category
     };
-
-    console.log(JSON.stringify(produto))
 
     fetch('http://localhost:3000/produtos', {
         method: 'POST',

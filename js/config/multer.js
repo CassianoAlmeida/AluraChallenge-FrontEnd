@@ -1,5 +1,4 @@
 import multer from "multer";
-import crypto from 'crypto'
 
 const multerConfig = {
     dest: 'src/assets/img',
@@ -8,12 +7,11 @@ const multerConfig = {
             cb(null, 'src/assets/img');
         },
         filename: (req, file, cb) => {
-            crypto.randomBytes(16, (err, hash) => {
-                if (err) cb(err);
-
-                const fileName = `${hash.toString('hex')}-${file.originalname}`
-                cb(null, fileName);
-            })
+            let ext = file.originalname.
+                substring(file.originalname.lastIndexOf('.'), file.originalname.length);
+            const fileName = `${String((Date.now())).slice(0, -3)}-${file.originalname}`
+            cb(null, fileName);
+           
         }
     }),
     limits: {
