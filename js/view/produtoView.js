@@ -1,6 +1,6 @@
 const db = fetch('http://localhost:3000/produtos', {
     method: 'GET',
-}).then(await function(response) {
+}).then(function(response) {
     return response.json();
 })
 const dbObjeto = await db;

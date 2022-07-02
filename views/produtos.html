@@ -31,7 +31,7 @@
                 <h1 class="produtos__header__title">Todos os produtos</h1>
                 <a href="./novo-produto.html" class="produtos__header__add-product">Adicionar produto</a>
             </div>
-            <ul class="produtos__list">
+            <ul class="produtos__list" id="produtos-list">
                 <li class="produtos__list__card">
                     <img class="produtos__list__card__img" src="/src/assets/img/star-wars-1.png" alt="Produto XYZ">
                     <div class="produtos__list__card__content">
@@ -283,5 +283,8 @@
     <footer class="footer">
         <h4 class="footer__text">Desenvolvido por Cassiano Almeida<br>2021</h4>
     </footer>
+    <script type="module" src="../js/view/produtoListaView.js"></script>
+    <script type="module" src="../js/controller/excluiProduto.js"></script>
+    <script type="module" src="../js/controller/editaProduto.js"></script>
 </body>
 </html>
