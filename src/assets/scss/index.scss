@@ -3,7 +3,8 @@ $custom-black: #464646;
 $light-gray: #F5F5F5;
 $white: #FFFFFF;
 $light-blue-background: #EAF2FD;
-
+$gray-background: #E5E5E5;
+$placeholder-color: #A2A2A2;
 
 @mixin for-phone-only {
     @media (max-width: 667.98px) { @content; }
@@ -21,4 +22,6 @@ $light-blue-background: #EAF2FD;
 './components/presentation.scss',
 './components/products.scss',
 './components/contact.scss',
-'./components/footer.scss'
+'./components/footer.scss',
+'./components/modal-login.scss',
+'./components/login.scss'

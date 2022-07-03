@@ -19,9 +19,9 @@
                     <input class="nav__container__search-box__input" type="text" placeholder="O que deseja encontrar?">
                     <img class="nav__container__search-box__img" src="./src/assets/img/search-icon.png" alt="pesquisar">
                 </section>
-                <a href="./views/login.html" class="nav__container__login-button">
-                    <p>Login</p>
-                </a>
+                <button class="nav__container__login-button">
+                    <p id="login-button">Login</p>
+                </button>
             </div>
         </nav>
     </header>
@@ -237,6 +237,25 @@
     <footer class="footer">
         <h4 class="footer__text">Desenvolvido por Cassiano Almeida<br>2021</h4>
     </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class="login">
+                <h1 class="login__title">Iniciar Sessão</h1>
+                <form class="login__form" action="">
+                    <label for="email"></label>
+                    <input class="login__form__field" type="text" id="email" placeholder="Escreva seu email">
+                    <label for="senha"></label>
+                    <input class="login__form__field" type="text" id="senha" placeholder="Escreva sua senha">
+                    <input class="login__form__button" type="submit" value="Entrar">
+                </form>
+            </section>
+        </div>
+    </div>
+
     <script type="module" src="./js/view/produtoView.js"></script>
+    <script src="./js/view/modal-login.js"></script>
 </body>
 </html>
