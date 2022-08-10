@@ -65,8 +65,12 @@ main {
 
             &__preview {
                 position: absolute;
-                //opacity: 0;
+                display: none;
                 height: 100%;
+            }
+
+            &__preview-show {
+                display: block;
             }
 
             &__icon {
@@ -102,43 +106,6 @@ main {
             }
 
 
-        }
-
-        &__division {
-            width: 15%;
-            display: flex;
-            justify-content: center;
-
-            @include for-phone-only {
-                display: none;
-            }
-        }
-
-        &__search-button {
-            width: 50%;
-            height: 50px;
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: $blue-theme;
-            border: 1px solid $blue-theme;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-
-            @include for-phone-only {
-                display: none;
-            }
-
-            &__input {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-            }
         }
     }
 

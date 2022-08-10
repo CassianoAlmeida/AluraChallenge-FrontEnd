@@ -28,15 +28,12 @@
     <main>
         <section class="produto">
             <div class="produto__container">
-                <img class="produto__img" src="../src/assets/img/star-wars-1-big.png" alt="produto XYZ">
+                <img class="produto__img" alt="produto XYZ" id="product-image">
             </div>
             <div class="produto__content">
-                <h1 class="produto__content__title">Produto ZYZ</h1>
-                <p class="produto__content__price">R$60,00</p>
-                <p class="produto__content__text">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus,
-                     facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti
-                     proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat 
-                     faucibus, dolorum do. Animi porta anim magnam</p>
+                <h1 class="produto__content__title" id="product-title"></h1>
+                <p class="produto__content__price" id="product-price"></p>
+                <p class="produto__content__text" id="product-description"></p>
             </div>
         </section>
 
@@ -44,7 +41,7 @@
             <div class="products__header">
                 <h2 class="products__header__title">Produtos similares</h2>
             </div>
-            <ul class="products__list">
+            <ul class="products__list" id="similar-products">
                 <li class="products__list__card">
                     <img src="/src/assets/img/star-wars-1.png" alt="Produto XYZ">
                     <div class="products__list__card__content">
@@ -128,5 +125,8 @@
     <footer class="footer">
         <h4 class="footer__text">Desenvolvido por Cassiano Almeida<br>2021</h4>
     </footer>
+    <script type="module" src="../js/view/produtoView.js"></script>
+    <script type="module" src="../js/view/produtosSimilaresView.js"></script>
+
 </body>
 </html>

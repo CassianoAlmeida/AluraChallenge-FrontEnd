@@ -1,0 +1,62 @@
+main {
+    background-color: $light-gray-background;
+        padding-top: 70px;
+
+        @include for-phone-only {
+            padding-top: 0;
+        }
+}
+
+#search-list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.produtos__list__card {
+    display: flex;
+
+    &__img {
+        margin: 2%;
+    }
+
+    &__content {
+        margin: auto 5%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__text {
+            font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $custom-black;
+                    margin-top: 5px;
+        }
+
+        &__price {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: $custom-black;
+        }
+
+        &__link {
+            text-decoration: none;
+                    color: $blue-theme;
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+        }
+
+        &__id-hide {
+            display: none;
+        }
+    }
+}

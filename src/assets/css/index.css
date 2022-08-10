@@ -124,6 +124,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .presentation {
   width: 100%;
   position: relative;
@@ -290,6 +294,9 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
+}
+.products__list__card__content__id-hide {
+  display: none;
 }
 @media (min-width: 668px) and (max-width: 1099.98px) {
   .products__list__hide {

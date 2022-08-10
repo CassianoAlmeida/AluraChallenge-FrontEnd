@@ -5,11 +5,7 @@ arrastaImagem.addEventListener("change", function(){
     const reader = new FileReader();
     reader.addEventListener('load', () => {
         preview.src = reader.result;
-        document.getElementById("img-icon").
-            classList.add('novo-produto__add-image__drag-box__icon-hide');
-        document.getElementById("drag-box-description").
-            classList.add('novo-produto__add-image__drag-box__text-hide');
-        });
+    });
     reader.readAsDataURL(this.files[0]);
 })
 
@@ -22,12 +18,11 @@ submit.addEventListener('click', () => {
     fetch('http://localhost:3000/imagem', {
         method: 'POST',
         body: data,
-    })
+    }).then(console.log('fetch da imagem funcionou'))
 
     //sobe dados para o mongo.db
-    const date = new Date();
-    const imageName = data.get('image').name;
-    const imageNewName = `${String((Date.now())).slice(0, -3)}-${imageName}`
+    const produto = {}
+
     const idInput = document.getElementById("id").value;
     const nameInput = document.getElementById("nome").value;
     const priceInput = document.getElementById("preco").value;
@@ -35,14 +30,27 @@ submit.addEventListener('click', () => {
     const option = selectInput.children[selectInput.selectedIndex];
     const category = option.textContent;    
     const descriptionInput = document.getElementById("descricao").value;
-    const produto = {
-        imagem: imageNewName,
-        nome: nameInput, 
-        preco: priceInput, 
-        descricao: descriptionInput,
-        categoria: category
-    };
 
+    const imageName = data.get('image').name;
+    console.log(imageName)
+
+    if(typeof imageName === "undefined") {
+        console.log('dentro do undefined')
+        produto["nome"] = nameInput;
+        produto["preco"] = priceInput;
+        produto["descricao"] = descriptionInput;
+        produto["categoria"] = category;
+    } else {
+        console.log("dentro do else")
+        const date = new Date();
+        const imageNewName = `${String((Date.now())).slice(0, -3)}-${imageName}`
+        produto["imagem"] = imageNewName;
+        produto["nome"] = nameInput;
+        produto["preco"] = priceInput;
+        produto["descricao"] = descriptionInput;
+        produto["categoria"] = category;
+    }
+    
     fetch('http://localhost:3000/produtos/' + idInput, {
         method: 'PUT',
         headers: {

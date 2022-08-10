@@ -17,16 +17,16 @@
     padding: 20px;
     border: 1px solid #888;
     width: 50%;
-    height: 450px;
+    height: 500px;
 
     @include for-tablet-only {
       width: 60%;
-      height: 450px;
+      height: 500px;
     }
 
     @include for-phone-only {
       width: 80%;
-      height: 450px;
+      height: 500px;
     }
   }
   

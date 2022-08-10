@@ -227,8 +227,8 @@
                         <input class="contact__fale-conosco__form__name" type="text" id="name">
                         <label class="contact__fale-conosco__form__message-label"for="message">Escreva sua mensagem</label>
                         <textarea class="contact__fale-conosco__form__message" name="" id="message" cols="30" rows="5"></textarea>
-                        <input class="contact__fale-conosco__form__button" type="submit" value="Enviar mensagem">
                     </form>
+                    <button class="contact__fale-conosco__form__button" type="reset">Enviar mensagem</button>
                 </div>
             </div>
         </section>
@@ -249,13 +249,16 @@
                     <input class="login__form__field" type="text" id="email" placeholder="Escreva seu email">
                     <label for="senha"></label>
                     <input class="login__form__field" type="text" id="senha" placeholder="Escreva sua senha">
-                    <input class="login__form__button" type="submit" value="Entrar">
+                    <button class="login__form__button" type="reset" id="entrar">Entrar</button>
                 </form>
             </section>
         </div>
     </div>
 
-    <script type="module" src="./js/view/produtoView.js"></script>
+    <script type="module" src="./js/view/indexView.js"></script>
+    <script type="module" src="./js/controller/pegaIdProduto.js"></script>
     <script src="./js/view/modal-login.js"></script>
+    <script src="./js/controller/fakelogin.js"></script>
+    <script type="module" src="./js/controller/pegaIdProduto.js"></script>
 </body>
 </html>

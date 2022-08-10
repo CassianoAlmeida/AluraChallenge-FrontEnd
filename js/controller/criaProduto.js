@@ -7,6 +7,8 @@ arrastaImagem.addEventListener("change", function(){
     const reader = new FileReader();
     reader.addEventListener('load', () => {
         preview.src = reader.result;
+        preview.
+            classList.add('novo-produto__add-image__drag-box__preview-show');
         document.getElementById("img-icon").
             classList.add('novo-produto__add-image__drag-box__icon-hide');
         document.getElementById("drag-box-description").

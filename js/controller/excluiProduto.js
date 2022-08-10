@@ -1,4 +1,4 @@
-import db from '../view/produtoListaView.js'
+import db from './pegaListaDB.js'
 
 db.then(() => {
     const botaoDeleta = document.getElementsByClassName('produtos__list__card__button-box__button__delete')
@@ -14,6 +14,7 @@ db.then(() => {
                     },
                 })
             }
+            document.location.reload(true);
         })
     }
 })
