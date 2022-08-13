@@ -158,6 +158,10 @@ main {
     width: 100%;
   }
 }
+.produto__img {
+  max-width: 254px;
+  max-height: 251px;
+}
 @media (min-width: 668px) and (max-width: 1099.98px) {
   .produto__img {
     width: 254px;

@@ -30,6 +30,9 @@ main {
     }
 
     &__img {
+        max-width: 254px;
+        max-height: 251px;
+
         @include for-tablet-only {
             width: 254px;
         }

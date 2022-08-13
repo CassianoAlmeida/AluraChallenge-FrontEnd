@@ -48,7 +48,7 @@ function exibeProduto(dbObjeto) {
             cardProdutoName.appendChild(textoNome);
             cardProdutoPreco.className = "produtos__list__card__content__price";
             cardProdutoPreco.appendChild(textoPreco);
-            cardProdutoLink.className = "produtos__list__card__content__link";
+            cardProdutoLink.className = "produtos__list__card__content__link products__list__card__content__link";
             cardProdutoId.className = "produtos__list__card__content__id-hide"
            
             produtoLista.appendChild(cardProdutoLi);

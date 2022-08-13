@@ -7,11 +7,9 @@ const db = fetch('http://localhost:3000/produtos', {
 const produtosSimilares = document.getElementById('similar-products')
 const idItem = sessionStorage.getItem('id');
 const dbObjeto = await db;
-console.log(dbObjeto)
 
 function criaProduto(dbObjeto){
     dbObjeto.forEach(element => {
-        console.log(element._id)
         if(element._id == idItem) {
             const categoriaProduto = element.categoria;
             dbObjeto.forEach(element => {

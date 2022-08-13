@@ -263,6 +263,28 @@ html {
     margin: 1%;
   }
 }
+.products__list__card__img {
+  max-width: 152px;
+  min-width: 152px;
+  max-height: 172px;
+  min-height: 172px;
+}
+@media (max-width: 667.98px) {
+  .products__list__card__img {
+    max-width: 140px;
+    min-width: 140px;
+    max-height: 162px;
+    min-height: 162px;
+  }
+}
+@media (min-width: 668px) and (max-width: 1099.98px) {
+  .products__list__card__img {
+    max-width: 164px;
+    min-width: 140px;
+    max-height: 162px;
+    min-height: 162px;
+  }
+}
 .products__list__card__content {
   height: 75px;
   display: flex;

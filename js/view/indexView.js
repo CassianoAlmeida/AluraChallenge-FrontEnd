@@ -36,7 +36,8 @@ function carregaCards() {
         cardProdutoId.appendChild(textoId);
 
         cardProdutoLi.className = "products__list__card";
-        cardProdutoImg.alt = `${element.nome}`
+        cardProdutoImg.alt = `${element.nome}`;
+        cardProdutoImg.className = "products__list__card__img";
         cardProdutoImg.setAttribute('src', `./src/assets/img/${element.imagem}`)
         cardProdutoContainer.className = "products__list__card__content";
         cardProdutoName.className = "products__list__card__content__text";

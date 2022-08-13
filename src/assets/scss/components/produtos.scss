@@ -61,11 +61,7 @@ main {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-//
-//        &::after {
- //           content: "";
- //           flex: auto;
-//        }
+
 
         @include for-tablet-only {
             width: 100%;
@@ -96,12 +92,23 @@ main {
             }
 
             &__img {
+                max-width: 152px;
+                min-width: 152px;
+                max-height: 172px;
+                min-height: 172px;
+
                 @include for-phone-only {
-                    width: 140px;
+                    max-width: 140px;
+                    min-width: 140px;
+                    max-height: 162px;
+                    min-height: 162px;
                 }
 
                 @include for-tablet-only {
-                    width: 164px;
+                    max-width: 164px;
+                    min-width: 140px;
+                    max-height: 162px;
+                    min-height: 162px;
                 }
             }
 
