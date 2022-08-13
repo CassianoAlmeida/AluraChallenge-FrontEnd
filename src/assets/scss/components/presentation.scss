@@ -21,7 +21,6 @@ html {
         left: 8%;
 
         &__title {
-            width: 550px;
             height: 61px;
             font-family: 'Raleway';
             font-style: normal;
@@ -32,13 +31,11 @@ html {
             color: $white;
 
             @include for-phone-only {
-                font-size: 22px;
-                width: 300px;
+                font-size: 32px;
             }
         }
 
         &__text {
-            width: 550px;
             height: 26px;
             font-family: 'Raleway';
             font-style: normal;
@@ -49,8 +46,7 @@ html {
             color: $white;
 
             @include for-phone-only {
-                font-size: 14px;
-                width: 300px;
+                font-size: 18px;
             }
         }
 

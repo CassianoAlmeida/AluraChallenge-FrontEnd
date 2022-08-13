@@ -108,6 +108,10 @@
             line-height: 19px;
             text-decoration: none;
 
+            &:hover {
+                cursor: pointer;
+            }
+
             @include for-tablet-only {
                 font-size: 14px;
                 width: 150px;

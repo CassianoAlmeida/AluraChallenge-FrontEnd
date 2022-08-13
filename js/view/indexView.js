@@ -22,7 +22,7 @@ function carregaCards() {
         const cardProdutoId = document.createElement("p");
         
         const textoNome = document.createTextNode(`${element.nome}`);
-        const textoPreco = document.createTextNode(`${element.preco}`);
+        const textoPreco = document.createTextNode(`R$ ${element.preco}`);
         const textoId = document.createTextNode(`${element._id}`);
         const textoLink = document.createTextNode(`Ver produto`);
 
@@ -35,7 +35,6 @@ function carregaCards() {
         cardProdutoLink.appendChild(textoLink);
         cardProdutoId.appendChild(textoId);
 
-        cardProdutoLi.className = "products__list__card";
         cardProdutoImg.alt = `${element.nome}`;
         cardProdutoImg.className = "products__list__card__img";
         cardProdutoImg.setAttribute('src', `./src/assets/img/${element.imagem}`)
@@ -47,13 +46,14 @@ function carregaCards() {
         cardProdutoLink.className = "products__list__card__content__link";
         cardProdutoId.className = "products__list__card__content__id-hide"
 
-        listaStarWars.appendChild(cardProdutoLi);
-
         if(element.categoria == 'Star Wars') {
+            cardProdutoLi.className = "products__list__card products__list__card__star-wars";
             listaStarWars.appendChild(cardProdutoLi);
         } if(element.categoria == 'Consoles') {
+            cardProdutoLi.className = "products__list__card products__list__card__consoles";
             listaConsoles.appendChild(cardProdutoLi)
         } if(element.categoria == 'Diversos') {
+            cardProdutoLi.className = "products__list__card products__list__card__diversos";
             listaDiversos.appendChild(cardProdutoLi)
         }
     });
