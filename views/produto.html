@@ -12,12 +12,12 @@
         <nav class="nav">
             <div class="nav__container">
                 <a href="../index.html" class="nav__container__logo">
-                    <img src="../src/assets/img/logo-img.png" alt="">
+                    <img class="nav__container__logo__img" src="../src/assets/img/logo-img.png" alt="">
                     <p class="nav__container__logo__text"><span class="nav__container__logo__text__blue">Alura</span>Geek</p>
                 </a>
                 <section class="nav__container__search-box">
-                    <input class="nav__container__search-box__input" type="text" placeholder="O que deseja encontrar?">
-                    <img class="nav__container__search-box__img" src="../src/assets/img/search-icon.png" alt="pesquisar">
+                    <input class="nav__container__search-box__input" id="input-search-bar" type="text" placeholder="O que deseja encontrar?">
+                    <button id="button-search" class="nav__container__search-box__button"><img class="nav__container__search-box__img" src="../src/assets/img/search-icon.png" alt="pesquisar"></button>
                 </section>
                 <a href="./login.html" class="nav__container__login-button">
                     <p>Login</p>
@@ -42,54 +42,6 @@
                 <h2 class="products__header__title">Produtos similares</h2>
             </div>
             <ul class="products__list" id="similar-products">
-                <li class="products__list__card">
-                    <img src="/src/assets/img/star-wars-1.png" alt="Produto XYZ">
-                    <div class="products__list__card__content">
-                        <p class="products__list__card__content__text">Produto XYZ</p>
-                        <p class="products__list__card__content__price">R$60,00</p>
-                        <a class="products__list__card__content__link" href="./views/produto.html">Ver produto</a>
-                    </div>
-                </li>
-                <li class="products__list__card">
-                    <img src="/src/assets/img/star-wars-2.png" alt="Produto XYZ">
-                    <div class="products__list__card__content">
-                        <p class="products__list__card__content__text">Produto XYZ</p>
-                        <p class="products__list__card__content__price">R$60,00</p>
-                        <a class="products__list__card__content__link" href="#">Ver produto</a>
-                    </div>
-                </li>
-                <li class="products__list__card">
-                    <img src="/src/assets/img/star-wars-3.png" alt="Produto XYZ">
-                    <div class="products__list__card__content">
-                        <p class="products__list__card__content__text">Produto XYZ</p>
-                        <p class="products__list__card__content__price">R$60,00</p>
-                        <a class="products__list__card__content__link" href="#">Ver produto</a>
-                    </div>
-                </li>
-                <li class="products__list__card">
-                    <img src="/src/assets/img/star-wars-4.png" alt="Produto XYZ">
-                    <div class="products__list__card__content">
-                        <p class="products__list__card__content__text">Produto XYZ</p>
-                        <p class="products__list__card__content__price">R$60,00</p>
-                        <a class="products__list__card__content__link" href="#">Ver produto</a>
-                    </div>
-                </li>
-                <li class="products__list__card products__list__hide">
-                    <img src="/src/assets/img/star-wars-5.png" alt="Produto XYZ">
-                    <div class="products__list__card__content">
-                        <p class="products__list__card__content__text">Produto XYZ</p>
-                        <p class="products__list__card__content__price">R$60,00</p>
-                        <a class="products__list__card__content__link" href="#">Ver produto</a>
-                    </div>
-                </li>
-                <li class="products__list__card products__list__hide">
-                    <img src="/src/assets/img/star-wars-6.png" alt="Produto XYZ">
-                    <div class="products__list__card__content">
-                        <p class="products__list__card__content__text">Produto XYZ</p>
-                        <p class="products__list__card__content__price">R$60,00</p>
-                        <a class="products__list__card__content__link" href="#">Ver produto</a>
-                    </div>
-                </li>
             </ul>
         </section>
         <section class="contact">
@@ -127,6 +79,6 @@
     </footer>
     <script type="module" src="../js/view/produtoView.js"></script>
     <script type="module" src="../js/view/produtosSimilaresView.js"></script>
-
+    <script type="module" src="../js/controller/searchBarProdutos.js"></script>
 </body>
 </html>

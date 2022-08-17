@@ -58,9 +58,16 @@ main {
     }
 
     &__list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        @include for-tablet-only {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        @include for-phone-only {
+            grid-template-columns: 1fr 1fr;
+        }
 
 
         @include for-tablet-only {
@@ -83,12 +90,12 @@ main {
             }
 
             @include for-tablet-only {
-                margin: 0 1%;
+                margin: 1% auto;
                 flex-shrink: 1;          
             }
 
             @include for-phone-only {
-                margin: 1.5% 1%;
+                margin: 1% auto;
             }
 
             &__img {
@@ -162,11 +169,11 @@ main {
                     top: 15px;
 
                     &__delete {
-                        left: 55%;
+                        left: 45%;
                     }
 
                     &__edit {
-                        left: 77%;
+                        left: 60%;
                     }
                 }
 

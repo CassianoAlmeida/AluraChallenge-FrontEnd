@@ -39,6 +39,7 @@ function criaProduto(dbObjeto){
                     cardProdutoLi.className = "products__list__card";
                     cardProdutoImg.alt = `${element.nome}`
                     cardProdutoImg.setAttribute('src', `../src/assets/img/${element.imagem}`)
+                    cardProdutoImg.className = "products__list__card__img"
                     cardProdutoContainer.className = "products__list__card__content";
                     cardProdutoName.className = "products__list__card__content__text";
                     cardProdutoName.appendChild(textoNome);

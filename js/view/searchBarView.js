@@ -12,7 +12,10 @@ const valorPesquisa = sessionStorage.getItem('search');
 
 function exibeProduto(dbObjeto) {
     dbObjeto.forEach(element => {
-        if(element.nome.includes(valorPesquisa)) {
+        let nomeLetraMaiuscula = element.nome.toUpperCase();
+        let categoriaMaiuscula = element.categoria.toUpperCase();
+        const pesquisaMaiuscula = valorPesquisa.toUpperCase()
+        if(nomeLetraMaiuscula.includes(pesquisaMaiuscula) || categoriaMaiuscula.includes(pesquisaMaiuscula)) {
 
             const produtoLista = document.getElementById('search-list')
 
@@ -56,4 +59,14 @@ function exibeProduto(dbObjeto) {
     });
 }
 
+function mensagemNegativa() {
+    const cardsPesquisa = document.getElementsByClassName('produtos__list__card');
+    const mensagem = document.getElementById('not-find');
+    console.log(cardsPesquisa)
+    if(cardsPesquisa.length == 0) {
+        mensagem.className = "not-find-message not-find-message__show";
+    }
+}
+
 exibeProduto(dbObjeto);
+mensagemNegativa();

@@ -19,7 +19,7 @@ function criaProduto(dbObjeto){
         const descricaoItem = document.getElementById('product-description');
     
         const textoNome = document.createTextNode(`${element.nome}`);
-        const textoPreco = document.createTextNode(`${element.preco}`);
+        const textoPreco = document.createTextNode(`R$${element.preco}`);
         const textoDescricao = document.createTextNode(`${element.descricao}`);
 
         imagemItem.setAttribute('src', `../src/assets/img/${element.imagem}`);
@@ -27,8 +27,9 @@ function criaProduto(dbObjeto){
         precoItem.appendChild(textoPreco);
         descricaoItem.appendChild(textoDescricao);
     });
-
 }
+
+
 
 criaProduto(dbObjeto);
 

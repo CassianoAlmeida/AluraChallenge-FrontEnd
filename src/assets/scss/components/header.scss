@@ -9,12 +9,18 @@
         height: 115px;
         top: 0px;
         margin: 0 auto;
+        padding: 0 7%;
+
+        @include for-phone-only {
+            padding: 0 4%;
+        }
 
         &__logo {
             display: flex;
             position: absolute;
             align-items: center;
             text-decoration: none;
+            color: $custom-black;
 
             @include for-phone-only {
                 margin-left: 2%;
@@ -23,13 +29,19 @@
             @include for-tablet-only {
                 margin-left: 2%;
             }
-            
+
+            &__img {
+                @include for-phone-only {
+                    max-width: 25px;
+                }
+            }
+
             &__text {
                font-size: 26px;
                font-weight: bold;
 
                @include for-phone-only {
-                   font-size: 20px;
+                   font-size: 16px;
                }
 
                &__blue {
@@ -39,16 +51,24 @@
         }
 
         &__search-box {
-            position: absolute;
-            left: 20%;
+           //position: absolute;
+           //left: 20%;
+//
+           //@include for-tablet-only {
+           //    left: 35%;
+           //}
+//
+           //@include for-phone-only {
+           //    left: 80%;
+           //}
 
-            @include for-tablet-only {
-                left: 35%;
-            }
+           margin: 0 auto;
 
-            @include for-phone-only {
-                left: 80%;
-            }
+           @include for-phone-only {
+                position: absolute;
+                right: 0;
+                margin: 0;
+           }
 
             &__input {
                 width: 393px;
@@ -58,8 +78,16 @@
                 border-radius: 20px;
                 border: none;
 
+                &::-webkit-input-placeholder{
+                    padding: 20px;
+                }
+
+                &::-moz-placeholder {
+                    margin-left: 10px;
+                }
+
                 @include for-tablet-only {
-                    width: 272px;
+                    width: 205px;
                 }
 
                 @include for-phone-only {
@@ -76,13 +104,19 @@
                 }
             }
 
-            &__img {
+            &__button {
+                border: none;
                 position: relative;
                 left: -10%;
                 top: 5px;
+                background-color: $light-gray;
 
                 @include for-phone-only {
-                    left: -32px;
+                    left: -37px;
+                }
+
+                @include for-tablet-only {
+                    left: -37px;
                 }
             }
         }
@@ -121,9 +155,10 @@
 
             @include for-phone-only {
                 font-size: 14px;
-                width: 110px;
-                height: 36px;
+                width: 90px;
+                height: 32px;
                 left: 37%;
+                margin-top: 3%;
             }
         }
     }
