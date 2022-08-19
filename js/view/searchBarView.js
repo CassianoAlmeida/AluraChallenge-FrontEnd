@@ -62,7 +62,6 @@ function exibeProduto(dbObjeto) {
 function mensagemNegativa() {
     const cardsPesquisa = document.getElementsByClassName('produtos__list__card');
     const mensagem = document.getElementById('not-find');
-    console.log(cardsPesquisa)
     if(cardsPesquisa.length == 0) {
         mensagem.className = "not-find-message not-find-message__show";
     }

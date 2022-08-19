@@ -22,8 +22,6 @@ db.then(() => {
           let text = botaoEdita[i].parentElement.previousSibling.firstChild.textContent;
           let price = botaoEdita[i].parentElement.previousSibling.children[1].textContent;
           
-          console.log(img)
-
           const preview = document.getElementById('preview');
           const modalId = document.getElementById('id');
           const modalNome = document.getElementById('nome');
@@ -39,8 +37,6 @@ db.then(() => {
           modalNome.value = text;
           modalPreco.value = price;
           
-          console.log(price)
-
         }
     }
 })
