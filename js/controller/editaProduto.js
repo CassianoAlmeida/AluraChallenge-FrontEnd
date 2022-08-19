@@ -18,7 +18,7 @@ submit.addEventListener('click', () => {
     fetch('http://localhost:3000/imagem', {
         method: 'POST',
         body: data,
-    }).then(console.log('fetch da imagem funcionou'))
+    })
 
     //sobe dados para o mongo.db
     const produto = {}
@@ -32,16 +32,13 @@ submit.addEventListener('click', () => {
     const descriptionInput = document.getElementById("descricao").value;
 
     const imageName = data.get('image').name;
-    console.log(imageName)
 
     if(typeof imageName === "undefined") {
-        console.log('dentro do undefined')
         produto["nome"] = nameInput;
         produto["preco"] = priceInput;
         produto["descricao"] = descriptionInput;
         produto["categoria"] = category;
     } else {
-        console.log("dentro do else")
         const date = new Date();
         const imageNewName = `${String((Date.now())).slice(0, -3)}-${imageName}`
         produto["imagem"] = imageNewName;
@@ -57,5 +54,5 @@ submit.addEventListener('click', () => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(produto),
-    }).then(console.log('foi'))
+    });
 })

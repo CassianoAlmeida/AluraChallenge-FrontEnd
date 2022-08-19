@@ -66,12 +66,7 @@
   background-color: #F5F5F5;
   border-radius: 20px;
   border: none;
-}
-.nav__container__search-box__input::-webkit-input-placeholder {
-  padding: 20px;
-}
-.nav__container__search-box__input::-moz-placeholder {
-  margin-left: 10px;
+  padding-left: 10%;
 }
 @media (min-width: 668px) and (max-width: 1099.98px) {
   .nav__container__search-box__input {
@@ -92,6 +87,8 @@
 }
 .nav__container__search-box__button {
   border: none;
+  width: 28px;
+  height: 30px;
   background-color: #F5F5F5;
   position: relative;
   left: -10%;
@@ -106,6 +103,9 @@
   .nav__container__search-box__button {
     left: -37px;
   }
+}
+.nav__container__search-box__button-hide {
+  display: none;
 }
 .nav__container__search-box__img-hide {
   display: none;

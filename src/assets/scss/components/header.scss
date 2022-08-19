@@ -66,14 +66,7 @@
                 background-color: $light-gray;
                 border-radius: 20px;
                 border: none;
-
-                &::-webkit-input-placeholder{
-                    padding: 20px;
-                }
-
-                &::-moz-placeholder {
-                    margin-left: 10px;
-                }
+                padding-left: 10%;
 
                 @include for-tablet-only {
                     width: 205px;
@@ -95,6 +88,8 @@
 
             &__button {
                 border: none;
+                width: 28px;
+                height: 30px;
                 background-color: $light-gray;
                 position: relative;
                 left: -10%;
@@ -107,6 +102,10 @@
                 @include for-tablet-only {
                     left: -37px;
                 }
+            }
+
+            &__button-hide {
+                display: none;
             }
 
             &__img-hide {

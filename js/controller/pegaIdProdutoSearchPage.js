@@ -12,7 +12,6 @@ const listaLinksObjeto = await pegaID;
 for(let i = 0; i < listaLinksObjeto.length; i++) {
     listaLinksObjeto[i].addEventListener('click', () => {
         id = listaLinksObjeto[i].nextSibling.textContent;
-        console.log(id)
         sessionStorage.setItem('id', `${id}`);
         window.location.assign('./produto.html');
     })

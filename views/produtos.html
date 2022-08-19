@@ -15,12 +15,12 @@
                     <img src="../src/assets/img/logo-img.png" alt="">
                     <p class="nav__container__logo__text"><span class="nav__container__logo__text__blue">Alura</span>Geek</p>
                 </a>
-                <section class="nav__container__search-box">
+                <section class="nav__container__search-box" id="search-box">
                     <input class="nav__container__search-box__input" id="input-search-bar" type="text" placeholder="O que deseja encontrar?">
                     <button id="button-search" class="nav__container__search-box__button"><img class="nav__container__search-box__img" id="img-search" src="../src/assets/img/search-icon.png" alt="pesquisar"></button>
                 </section>
-                <button class="nav__container__login-button">
-                    Login
+                <button class="nav__container__login-button" id="login-button">
+                    <p id="login-button">Login</p>
                 </button>
             </div>
         </nav>
@@ -97,6 +97,23 @@
                     </select>
                     <textarea class="novo-produto__form__description" name="descricao" id="descricao" placeholder="Descrição do produto" data-description id="description" cols="30" rows="10"></textarea>
                     <button class="novo-produto__form__button" type="submit" data-submit>Atualizar produto</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class="login">
+                <h1 class="login__title">Iniciar Sessão</h1>
+                <form class="login__form" action="">
+                    <label for="email"></label>
+                    <input class="login__form__field" type="text" id="email" placeholder="Escreva seu email">
+                    <label for="senha"></label>
+                    <input class="login__form__field" type="text" id="senha" placeholder="Escreva sua senha">
+                    <button class="login__form__button" type="reset" id="entrar">Entrar</button>
                 </form>
             </section>
         </div>

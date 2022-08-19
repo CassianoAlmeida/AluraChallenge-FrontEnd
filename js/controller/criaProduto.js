@@ -52,6 +52,6 @@ submit.addEventListener('click', () => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(produto),
-    }).then(console.log('foi'))
+    });
 })
 
