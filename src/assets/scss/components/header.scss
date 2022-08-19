@@ -51,17 +51,6 @@
         }
 
         &__search-box {
-           //position: absolute;
-           //left: 20%;
-//
-           //@include for-tablet-only {
-           //    left: 35%;
-           //}
-//
-           //@include for-phone-only {
-           //    left: 80%;
-           //}
-
            margin: 0 auto;
 
            @include for-phone-only {
@@ -106,10 +95,10 @@
 
             &__button {
                 border: none;
+                background-color: $light-gray;
                 position: relative;
                 left: -10%;
                 top: 5px;
-                background-color: $light-gray;
 
                 @include for-phone-only {
                     left: -37px;
@@ -118,6 +107,20 @@
                 @include for-tablet-only {
                     left: -37px;
                 }
+            }
+
+            &__img-hide {
+                display: none;
+            }
+        }
+
+        &__search-box__mobile {
+            width: 50%;
+            right: 10%;
+            transition: 800ms;
+
+            &__input {
+                width: 100%;
             }
         }
 
@@ -158,8 +161,13 @@
                 width: 90px;
                 height: 32px;
                 left: 37%;
-                margin-top: 3%;
+                margin-top: 10px;
+                margin-left: 15px;
             }
+        }
+
+        &__login-button-hide {
+            display: none;
         }
     }
 }

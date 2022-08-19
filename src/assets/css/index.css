@@ -92,10 +92,10 @@
 }
 .nav__container__search-box__button {
   border: none;
+  background-color: #F5F5F5;
   position: relative;
   left: -10%;
   top: 5px;
-  background-color: #F5F5F5;
 }
 @media (max-width: 667.98px) {
   .nav__container__search-box__button {
@@ -106,6 +106,17 @@
   .nav__container__search-box__button {
     left: -37px;
   }
+}
+.nav__container__search-box__img-hide {
+  display: none;
+}
+.nav__container__search-box__mobile {
+  width: 50%;
+  right: 10%;
+  transition: 800ms;
+}
+.nav__container__search-box__mobile__input {
+  width: 100%;
 }
 .nav__container__login-button {
   position: absolute;
@@ -145,8 +156,12 @@
     width: 90px;
     height: 32px;
     left: 37%;
-    margin-top: 3%;
+    margin-top: 10px;
+    margin-left: 15px;
   }
+}
+.nav__container__login-button-hide {
+  display: none;
 }
 
 html {
