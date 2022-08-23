@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); //necessário para upload de arquivos
 app.use((req, res, next) => {
-    res.append('Access-Control-Allow-Origin', 'http://127.0.0.1:3000');
+    res.append('Access-Control-Allow-Origin', '*');
     res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With, Accept")
     //res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:3000");
