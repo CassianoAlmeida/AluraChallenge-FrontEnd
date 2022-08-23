@@ -226,13 +226,13 @@ main {
             color: $white;
 
             @include for-tablet-only {
-                width: 109px;
+                width: 350px;
                 height: 40px;
             }
 
             @include for-phone-only {
-                width: 109px;
-                height: 40px;
+                width: 70%;
+                height: 50px;
             }
         }
     }

@@ -25,7 +25,8 @@ function criaProduto(dbObjeto){
                     const cardProdutoId = document.createElement("p");
                     
                     const textoNome = document.createTextNode(`${element.nome}`);
-                    const textoPreco = document.createTextNode(`${element.preco}`);
+                    const textoPreco = document.createTextNode(`R$ ${element.preco}`);
+                    const textoId = document.createTextNode(`${element._id}`);
                     const textoLink = document.createTextNode(`Ver produto`);
             
                     cardProdutoLi.appendChild(cardProdutoImg);
@@ -35,6 +36,7 @@ function criaProduto(dbObjeto){
                     cardProdutoContainer.appendChild(cardProdutoLink);
                     cardProdutoContainer.appendChild(cardProdutoId);
                     cardProdutoLink.appendChild(textoLink);
+                    cardProdutoId.appendChild(textoId);
             
                     cardProdutoLi.className = "products__list__card";
                     cardProdutoImg.alt = `${element.nome}`
@@ -47,7 +49,8 @@ function criaProduto(dbObjeto){
                     cardProdutoPreco.appendChild(textoPreco);
                     cardProdutoLink.className = "products__list__card__content__link";
                     cardProdutoId.className = "products__list__card__content__id-hide"
-                    
+                    cardProdutoId.className = "products__list__card__content__id-hide"
+
                     if(i < 4) {
                         produtosSimilares.appendChild(cardProdutoLi); 
                     }

@@ -547,6 +547,7 @@ html {
   width: 100%;
   height: 56px;
   position: relative;
+  padding-left: 10px;
 }
 .contact__fale-conosco__form__message-label {
   position: absolute;
@@ -561,6 +562,8 @@ html {
   color: #464646;
 }
 .contact__fale-conosco__form__message {
+  padding-top: 30px;
+  padding-left: 10px;
   width: 100%;
   position: relative;
   margin-top: 16px;

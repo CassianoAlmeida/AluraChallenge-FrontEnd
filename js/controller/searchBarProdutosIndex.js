@@ -7,6 +7,7 @@ const pesquisaContainer = document.getElementById('search-box');
 botaoPesquisa.addEventListener('click', () => {
     if(window.innerWidth > 668) {
         sessionStorage.setItem('search', `${conteudoPesquisa.value}`)
+        conteudoPesquisa.value = '';
         window.location = './views/pesquisa.html';
     } else {
         imgPesquisa.className = "nav__container__search-box__img nav__container__search-box__img-hide";
@@ -21,6 +22,7 @@ botaoPesquisa.addEventListener('click', () => {
 conteudoPesquisa.addEventListener('keydown', (e) => {
     if(e.key == 'Enter') {
         sessionStorage.setItem('search', `${conteudoPesquisa.value}`)
+        conteudoPesquisa.value = '';
         window.location = './views/pesquisa.html';
     }
 })

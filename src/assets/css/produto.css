@@ -66,12 +66,7 @@
   background-color: #F5F5F5;
   border-radius: 20px;
   border: none;
-}
-.nav__container__search-box__input::-webkit-input-placeholder {
-  padding: 20px;
-}
-.nav__container__search-box__input::-moz-placeholder {
-  margin-left: 10px;
+  padding-left: 10%;
 }
 @media (min-width: 668px) and (max-width: 1099.98px) {
   .nav__container__search-box__input {
@@ -404,6 +399,12 @@ main {
   font-size: 16px;
   line-height: 19px;
 }
+.products__list__card__content__link:hover {
+  cursor: pointer;
+}
+.products__list__card__content__id-hide {
+  display: none;
+}
 @media (min-width: 668px) and (max-width: 1099.98px) {
   .products__list__hide {
     display: none;
@@ -535,6 +536,7 @@ main {
   width: 100%;
   height: 56px;
   position: relative;
+  padding-left: 10px;
 }
 .contact__fale-conosco__form__message-label {
   position: absolute;
@@ -549,6 +551,8 @@ main {
   color: #464646;
 }
 .contact__fale-conosco__form__message {
+  padding-top: 30px;
+  padding-left: 10px;
   width: 100%;
   position: relative;
   margin-top: 16px;
@@ -583,6 +587,148 @@ main {
   width: 400px;
   margin: auto;
   padding: 1%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #E5E5E5;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 300px;
+}
+@media (min-width: 668px) and (max-width: 1099.98px) {
+  .modal-content {
+    width: 60%;
+    height: 300px;
+  }
+}
+@media (max-width: 667.98px) {
+  .modal-content {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login {
+  padding-top: 60px;
+}
+.login__title {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 15px auto;
+  width: 131px;
+  height: 19px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+@media (min-width: 668px) and (max-width: 1099.98px) {
+  .login__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 667.98px) {
+  .login__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.login__form__field {
+  width: 100%;
+  height: 40px;
+  margin: 8px 0;
+  border: none;
+}
+.login__form__field::-webkit-input-placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A2A2A2;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.login__form__field::-moz-placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A2A2A2;
+  position: absolute;
+  left: 20px;
+}
+.login__form__button {
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+  background-color: #2A7AE4;
+  border: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+@media (min-width: 668px) and (max-width: 1099.98px) {
+  .login__form__button {
+    width: 109px;
+    height: 40px;
+  }
+}
+@media (max-width: 667.98px) {
+  .login__form__button {
+    width: 109px;
+    height: 40px;
+  }
 }
 
 /*# sourceMappingURL=produto.css.map */

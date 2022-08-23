@@ -30,7 +30,7 @@ function exibeProduto(dbObjeto) {
 
 
             const textoNome = document.createTextNode(`${element.nome}`);
-            const textoPreco = document.createTextNode(`${element.preco}`);
+            const textoPreco = document.createTextNode(`R$ ${element.preco}`);
             const textoId = document.createTextNode(`${element._id}`);
             
             cardProdutoLi.appendChild(cardProdutoImg);
