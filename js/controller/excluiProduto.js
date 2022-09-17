@@ -1,4 +1,9 @@
-import db from './pegaListaDB.js'
+const db = fetch('http://localhost:3000/produtos', {
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    method: 'GET',
+})
 
 db.then(() => {
     const botaoDeleta = document.getElementsByClassName('produtos__list__card__button-box__button__delete')
